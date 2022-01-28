@@ -1,0 +1,11 @@
+
+## commented below to create customer in memory authentication ##
+#spring.security.user:
+#  name: Arjun
+#  password: password
+
+# config for setting up in-memory ldap
+spring.ldap.embedded:
+  port: 8389
+  ldif: classpath:ldap-data.ldif
+  base-dn: dc=springframework,dc=org
